@@ -276,7 +276,7 @@
 
 #define PARKING_EXTRUDER_SOLENOIDS_INVERT          // If enabled, the solenoid is NOT magnetized with applied voltage
 #define PARKING_EXTRUDER_SOLENOIDS_PINS_ACTIVE LOW // LOW or HIGH pin signal energizes the coil
-#define PARKING_EXTRUDER_SOLENOIDS_DELAY 250       // (ms) Delay for magnetic field. No delay if 0 or not defined. \
+#define PARKING_EXTRUDER_SOLENOIDS_DELAY 250       // (ms) Delay for magnetic field. No delay if 0 or not defined. 
                                                    //#define MANUAL_SOLENOID_CONTROL                   // Manual control of docking solenoids with M380 S / M381
 
 #elif ENABLED(MAGNETIC_PARKING_EXTRUDER)
@@ -407,7 +407,7 @@
 //#define AUTO_POWER_E_TEMP        50 // (°C) Turn on PSU if any extruder is over this temperature
 //#define AUTO_POWER_CHAMBER_TEMP  30 // (°C) Turn on PSU if the chamber is over this temperature
 //#define AUTO_POWER_COOLER_TEMP   26 // (°C) Turn on PSU if the cooler is over this temperature
-#define POWER_TIMEOUT 30 // (s) Turn off power if the machine is idle for this duration \
+#define POWER_TIMEOUT 30 // (s) Turn off power if the machine is idle for this duration 
                          //#define POWER_OFF_DELAY          60 // (s) Delay of poweroff after M81 command. Useful to let fans run for extra time.
 #endif
 #endif
@@ -725,7 +725,7 @@
 //#define PID_DEBUG             // Sends debug data to the serial port. Use 'M303 D' to toggle activation.
 //#define PID_OPENLOOP          // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
 //#define SLOW_PWM_HEATERS      // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
-#define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature \
+#define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature 
                                 // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 #endif
 
@@ -1049,7 +1049,7 @@
  */
 #if DISABLED(CLASSIC_JERK)
 #define JUNCTION_DEVIATION_MM 0.013 // (mm) Distance from real junction edge
-#define JD_HANDLE_SMALL_SEGMENTS    // Use curvature estimation instead of just the junction angle \
+#define JD_HANDLE_SMALL_SEGMENTS    // Use curvature estimation instead of just the junction angle 
                                     // for small segments (< 1mm) with large junction angles (> 135°).
 #endif
 
@@ -1148,8 +1148,8 @@
  */
 //#define TOUCH_MI_PROBE
 #if ENABLED(TOUCH_MI_PROBE)
-#define TOUCH_MI_RETRACT_Z 0.5 // Height at which the probe retracts                                                        \
-                               //#define TOUCH_MI_DEPLOY_XPOS (X_MAX_BED + 2)  // For a magnet on the right side of the bed \
+#define TOUCH_MI_RETRACT_Z 0.5 // Height at which the probe retracts                                                        
+                               //#define TOUCH_MI_DEPLOY_XPOS (X_MAX_BED + 2)  // For a magnet on the right side of the bed 
                                //#define TOUCH_MI_MANUAL_DEPLOY                // For manual deploy (LCD menu)
 #endif
 
@@ -1251,7 +1251,7 @@
  */
 //#define PROBE_ACTIVATION_SWITCH
 #if ENABLED(PROBE_ACTIVATION_SWITCH)
-#define PROBE_ACTIVATION_SWITCH_STATE LOW // State indicating probe is active \
+#define PROBE_ACTIVATION_SWITCH_STATE LOW // State indicating probe is active 
                                           //#define PROBE_ACTIVATION_SWITCH_PIN PC6 // Override default pin
 #endif
 
@@ -1722,7 +1722,7 @@
 
 #if ENABLED(LCD_BED_LEVELING)
 #define MESH_EDIT_Z_STEP 0.025 // (mm) Step size while manually probing Z axis.
-#define LCD_PROBE_Z_RANGE 4    // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment \
+#define LCD_PROBE_Z_RANGE 4    // (mm) Z Range centered on Z_MIN_POS for LCD Z adjustment 
                                //#define MESH_EDIT_MENU        // Add a menu to edit mesh points
 #endif
 
@@ -1740,7 +1740,7 @@
 //#define LEVEL_CORNERS_USE_PROBE
 #if ENABLED(LEVEL_CORNERS_USE_PROBE)
 #define LEVEL_CORNERS_PROBE_TOLERANCE 0.1
-#define LEVEL_CORNERS_VERIFY_RAISED // After adjustment triggers the probe, re-probe to verify \
+#define LEVEL_CORNERS_VERIFY_RAISED // After adjustment triggers the probe, re-probe to verify 
                                     //#define LEVEL_CORNERS_AUDIO_FEEDBACK
 #endif
 
@@ -2106,10 +2106,10 @@
 #define PASSWORD_LENGTH 4 // (#) Number of digits (1-9). 3 or 4 is recommended
 #define PASSWORD_ON_STARTUP
 #define PASSWORD_UNLOCK_GCODE // Unlock with the M511 P<password> command. Disable to prevent brute-force attack.
-#define PASSWORD_CHANGE_GCODE // Change the password with M512 P<old> S<new>.                                        \
-                              //#define PASSWORD_ON_SD_PRINT_MENU       // This does not prevent gcodes from running \
-                              //#define PASSWORD_AFTER_SD_PRINT_END                                                  \
-                              //#define PASSWORD_AFTER_SD_PRINT_ABORT                                                \
+#define PASSWORD_CHANGE_GCODE // Change the password with M512 P<old> S<new>.                                        
+                              //#define PASSWORD_ON_SD_PRINT_MENU       // This does not prevent gcodes from running 
+                              //#define PASSWORD_AFTER_SD_PRINT_END                                                  
+                              //#define PASSWORD_AFTER_SD_PRINT_ABORT                                                
                               //#include "Configuration_Secure.h"       // External file with PASSWORD_DEFAULT_VALUE
 #endif
 
@@ -2683,7 +2683,7 @@
 //#define ANYCUBIC_LCD_I3MEGA
 //#define ANYCUBIC_LCD_CHIRON
 #if EITHER(ANYCUBIC_LCD_I3MEGA, ANYCUBIC_LCD_CHIRON)
-#define LCD_SERIAL_PORT 3 // Default is 3 for Anycubic \
+#define LCD_SERIAL_PORT 3 // Default is 3 for Anycubic 
                           //#define ANYCUBIC_LCD_DEBUG
 #endif
 

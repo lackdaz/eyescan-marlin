@@ -759,10 +759,10 @@
 #define X2_MIN_POS 80          // Set a minimum to ensure the  second X-carriage can't hit the parked first X-carriage
 #define X2_MAX_POS 353         // Set this to the distance between toolheads when both heads are homed
 #define X2_HOME_DIR 1          // Set to 1. The second X-carriage always homes to the maximum endstop position
-#define X2_HOME_POS X2_MAX_POS // Default X2 home position. Set to X2_MAX_POS.                                                     \
-                               // However: In this mode the HOTEND_OFFSET_X value for the second extruder provides a software      \
-                               // override for X2_HOME_POS. This also allow recalibration of the distance between the two endstops \
-                               // without modifying the firmware (through the "M218 T1 X???" command).                             \
+#define X2_HOME_POS X2_MAX_POS // Default X2 home position. Set to X2_MAX_POS.                                                     
+                               // However: In this mode the HOTEND_OFFSET_X value for the second extruder provides a software      
+                               // override for X2_HOME_POS. This also allow recalibration of the distance between the two endstops 
+                               // without modifying the firmware (through the "M218 T1 X???" command).                             
                                // Remember: you should set the second extruder x-offset to 0 in your slicer.
 
 // This is the default power-up mode which can be later using M605.
@@ -1298,7 +1298,7 @@
 #define LED_USER_PRESET_GREEN 128      // User defined GREEN value
 #define LED_USER_PRESET_BLUE 0         // User defined BLUE value
 #define LED_USER_PRESET_WHITE 255      // User defined WHITE value
-#define LED_USER_PRESET_BRIGHTNESS 255 // User defined intensity \
+#define LED_USER_PRESET_BRIGHTNESS 255 // User defined intensity 
                                        //#define LED_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup
 #endif
 #if ENABLED(NEO2_COLOR_PRESETS)
@@ -1306,7 +1306,7 @@
 #define NEO2_USER_PRESET_GREEN 128      // User defined GREEN value
 #define NEO2_USER_PRESET_BLUE 0         // User defined BLUE value
 #define NEO2_USER_PRESET_WHITE 255      // User defined WHITE value
-#define NEO2_USER_PRESET_BRIGHTNESS 255 // User defined intensity \
+#define NEO2_USER_PRESET_BRIGHTNESS 255 // User defined intensity 
                                         //#define NEO2_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup for the second strip
 #endif
 #endif
@@ -1359,8 +1359,8 @@
 #if ENABLED(LCD_PROGRESS_BAR)
 #define PROGRESS_BAR_BAR_TIME 2000 // (ms) Amount of time to show the bar
 #define PROGRESS_BAR_MSG_TIME 3000 // (ms) Amount of time to show the status message
-#define PROGRESS_MSG_EXPIRE 0      // (ms) Amount of time to retain the status message (0=forever)                    \
-                                   //#define PROGRESS_MSG_ONCE         // Show the message for MSG_TIME then clear it \
+#define PROGRESS_MSG_EXPIRE 0      // (ms) Amount of time to retain the status message (0=forever)                    
+                                   //#define PROGRESS_MSG_ONCE         // Show the message for MSG_TIME then clear it 
                                    //#define LCD_PROGRESS_BAR_TEST     // Add a menu item to test the progress bar
 #endif
 #endif
@@ -1476,7 +1476,7 @@
 #define SDSORT_USES_STACK false  // Prefer the stack for pre-sorting to give back some SRAM. (Negated by next 2 options.)
 #define SDSORT_CACHE_NAMES false // Keep sorted items in RAM longer for speedy performance. Most expensive option.
 #define SDSORT_DYNAMIC_RAM false // Use dynamic allocation (within SD menus). Least expensive option. Set SDSORT_LIMIT before use!
-#define SDSORT_CACHE_VFATS 2     // Maximum number of 13-byte VFAT entries to use for sorting. \
+#define SDSORT_CACHE_VFATS 2     // Maximum number of 13-byte VFAT entries to use for sorting. 
                                  // Note: Only affects SCROLL_LONG_FILENAMES with SDSORT_CACHE_NAMES but not SDSORT_DYNAMIC_RAM.
 #endif
 
@@ -1660,14 +1660,14 @@
 #define STATUS_HOTEND_INVERTED // Show solid nozzle bitmaps when heating (Requires STATUS_HOTEND_ANIM for numbered hotends)
 #define STATUS_HOTEND_ANIM     // Use a second bitmap to indicate hotend heating
 #define STATUS_BED_ANIM        // Use a second bitmap to indicate bed heating
-#define STATUS_CHAMBER_ANIM    // Use a second bitmap to indicate chamber heating                                            \
-                               //#define STATUS_CUTTER_ANIM        // Use a second bitmap to indicate spindle / laser active \
-                               //#define STATUS_COOLER_ANIM        // Use a second bitmap to indicate laser cooling          \
-                               //#define STATUS_FLOWMETER_ANIM     // Use multiple bitmaps to indicate coolant flow          \
-                               //#define STATUS_ALT_BED_BITMAP     // Use the alternative bed bitmap                         \
-                               //#define STATUS_ALT_FAN_BITMAP     // Use the alternative fan bitmap                         \
-                               //#define STATUS_FAN_FRAMES 3       // :[0,1,2,3,4] Number of fan animation frames            \
-                               //#define STATUS_HEAT_PERCENT       // Show heating in a progress bar                         \
+#define STATUS_CHAMBER_ANIM    // Use a second bitmap to indicate chamber heating                                            
+                               //#define STATUS_CUTTER_ANIM        // Use a second bitmap to indicate spindle / laser active
+                               //#define STATUS_COOLER_ANIM        // Use a second bitmap to indicate laser cooling          
+                               //#define STATUS_FLOWMETER_ANIM     // Use multiple bitmaps to indicate coolant flow          
+                               //#define STATUS_ALT_BED_BITMAP     // Use the alternative bed bitmap                         
+                               //#define STATUS_ALT_FAN_BITMAP     // Use the alternative fan bitmap                         
+                               //#define STATUS_FAN_FRAMES 3       // :[0,1,2,3,4] Number of fan animation frames            
+                               //#define STATUS_HEAT_PERCENT       // Show heating in a progress bar                         
                                //#define BOOT_MARLIN_LOGO_ANIMATED // Animated Marlin logo. Costs ~‭3260 (or ~940) bytes of PROGMEM.
 
 // Frivolous Game Options
@@ -1909,7 +1909,7 @@
 
 //#define DOUBLECLICK_FOR_Z_BABYSTEPPING  // Double-click on the Status Screen for Z Babystepping.
 #if ENABLED(DOUBLECLICK_FOR_Z_BABYSTEPPING)
-#define DOUBLECLICK_MAX_INTERVAL 1250 // Maximum interval between clicks, in milliseconds. \
+#define DOUBLECLICK_MAX_INTERVAL 1250 // Maximum interval between clicks, in milliseconds. 
                                       // Note: Extra time may be added to mitigate controller latency.
 //#define MOVE_Z_WHEN_IDLE              // Jump to the move Z menu on doubleclick when printer is idle.
 #if ENABLED(MOVE_Z_WHEN_IDLE)
@@ -1946,8 +1946,8 @@
 //#define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
 //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-#define LIN_ADVANCE_K 0.22 // Unit: mm compression per 1mm/s extruder speed                                                   \
-                           //#define LA_DEBUG            // If enabled, this will generate debug information output over USB. \
+#define LIN_ADVANCE_K 0.22 // Unit: mm compression per 1mm/s extruder speed                                                   
+                           //#define LA_DEBUG            // If enabled, this will generate debug information output over USB. 
                            //#define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
 #endif
 
@@ -2100,8 +2100,8 @@
 #define MAX_ARC_SEGMENT_MM 1.0 // (mm) Maximum length of each arc segment
 #define MIN_CIRCLE_SEGMENTS 72 // Minimum number of segments in a complete circle
 //#define ARC_SEGMENTS_PER_SEC 50   // Use the feedrate to choose the segment length
-#define N_ARC_CORRECTION 25 // Number of interpolated segments between corrections                                      \
-                            //#define ARC_P_CIRCLES             // Enable the 'P' parameter to specify complete circles \
+#define N_ARC_CORRECTION 25 // Number of interpolated segments between corrections                                      
+                            //#define ARC_P_CIRCLES             // Enable the 'P' parameter to specify complete circles 
                             //#define SF_ARC_FIX                // Enable only if using SkeinForge with "Arc Point" fillet procedure
 #endif
 
@@ -2416,8 +2416,8 @@
     {                                  \
         X_MIN_POS + 10, Y_MIN_POS + 10 \
     }
-#define TOOLCHANGE_PARK_XY_FEEDRATE 6000 // (mm/min)                                                   \
-                                         //#define TOOLCHANGE_PARK_X_ONLY          // X axis only move \
+#define TOOLCHANGE_PARK_XY_FEEDRATE 6000 // (mm/min)                                                   
+                                         //#define TOOLCHANGE_PARK_X_ONLY          // X axis only move 
                                          //#define TOOLCHANGE_PARK_Y_ONLY          // Y axis only move
 #endif
 #endif // HAS_MULTI_EXTRUDER
@@ -2436,27 +2436,27 @@
 //#define ADVANCED_PAUSE_FEATURE
 #if ENABLED(ADVANCED_PAUSE_FEATURE)
 #define PAUSE_PARK_RETRACT_FEEDRATE 60       // (mm/s) Initial retract feedrate.
-#define PAUSE_PARK_RETRACT_LENGTH 2          // (mm) Initial retract. \
+#define PAUSE_PARK_RETRACT_LENGTH 2          // (mm) Initial retract. 
                                              // This short retract is done immediately, before parking the nozzle.
 #define FILAMENT_CHANGE_UNLOAD_FEEDRATE 10   // (mm/s) Unload filament feedrate. This can be pretty fast.
 #define FILAMENT_CHANGE_UNLOAD_ACCEL 25      // (mm/s^2) Lower acceleration may allow a faster feedrate.
-#define FILAMENT_CHANGE_UNLOAD_LENGTH 100    // (mm) The length of filament for a complete unload.    \
-                                             //   For Bowden, the full length of the tube and nozzle. \
-                                             //   For direct drive, the full length of the nozzle.    \
+#define FILAMENT_CHANGE_UNLOAD_LENGTH 100    // (mm) The length of filament for a complete unload.    
+                                             //   For Bowden, the full length of the tube and nozzle. 
+                                             //   For direct drive, the full length of the nozzle.    
                                              //   Set to 0 for manual unloading.
 #define FILAMENT_CHANGE_SLOW_LOAD_FEEDRATE 6 // (mm/s) Slow move when starting load.
-#define FILAMENT_CHANGE_SLOW_LOAD_LENGTH 0   // (mm) Slow length, to allow time to insert material. \
+#define FILAMENT_CHANGE_SLOW_LOAD_LENGTH 0   // (mm) Slow length, to allow time to insert material. 
                                              // 0 to disable start loading and skip to fast load only
 #define FILAMENT_CHANGE_FAST_LOAD_FEEDRATE 6 // (mm/s) Load filament feedrate. This can be pretty fast.
 #define FILAMENT_CHANGE_FAST_LOAD_ACCEL 25   // (mm/s^2) Lower acceleration may allow a faster feedrate.
-#define FILAMENT_CHANGE_FAST_LOAD_LENGTH 0   // (mm) Load length of filament, from extruder gear to nozzle. \
-                                             //   For Bowden, the full length of the tube and nozzle.       \
+#define FILAMENT_CHANGE_FAST_LOAD_LENGTH 0   // (mm) Load length of filament, from extruder gear to nozzle. 
+                                             //   For Bowden, the full length of the tube and nozzle.       
                                              //   For direct drive, the full length of the nozzle.
 //#define ADVANCED_PAUSE_CONTINUOUS_PURGE       // Purge continuously up to the purge length until interrupted.
 #define ADVANCED_PAUSE_PURGE_FEEDRATE 3 // (mm/s) Extrude feedrate (after loading). Should be slower than load feedrate.
-#define ADVANCED_PAUSE_PURGE_LENGTH 50  // (mm) Length to extrude after loading.                               \
-                                        //   Set to 0 for manual extrusion.                                    \
-                                        //   Filament can be extruded repeatedly from the Filament Change menu \
+#define ADVANCED_PAUSE_PURGE_LENGTH 50  // (mm) Length to extrude after loading.                               
+                                        //   Set to 0 for manual extrusion.                                    
+                                        //   Filament can be extruded repeatedly from the Filament Change menu 
                                         //   until extrusion is consistent, and to purge old filament.
 #define ADVANCED_PAUSE_RESUME_PRIME 0   // (mm) Extra distance to prime nozzle after returning from park.
 //#define ADVANCED_PAUSE_FANS_PAUSE             // Turn off print-cooling fans while the machine is paused.
@@ -2469,8 +2469,8 @@
 
 #define PAUSE_PARK_NOZZLE_TIMEOUT 45   // (seconds) Time limit before the nozzle is turned off for safety.
 #define FILAMENT_CHANGE_ALERT_BEEPS 10 // Number of alert beeps to play when a response is needed.
-#define PAUSE_PARK_NO_STEPPER_TIMEOUT  // Enable for XYZ steppers to stay powered on during filament change.                                                            \
-                                       //#define FILAMENT_CHANGE_RESUME_ON_INSERT      // Automatically continue / load filament when runout sensor is triggered again. \
+#define PAUSE_PARK_NO_STEPPER_TIMEOUT  // Enable for XYZ steppers to stay powered on during filament change.                                                            
+                                       //#define FILAMENT_CHANGE_RESUME_ON_INSERT      // Automatically continue / load filament when runout sensor is triggered again. 
                                        //#define PAUSE_REHEAT_FAST_RESUME              // Reduce number of waits by not prompting again post-timeout before continuing.
 
 //#define PARK_HEAD_ON_PAUSE                    // Park the nozzle during pause and filament change.
@@ -2639,7 +2639,7 @@
 #define X_CURRENT_HOME X_CURRENT      // (mA) RMS current for sensorless homing
 #define X_MICROSTEPS CUSTOM_MICROSTEP // 0..256
 #define X_RSENSE 0.11
-#define X_CHAIN_POS -1 // -1..0: Not chained. 1: MCU MOSI connected. 2: Next in chain, ... \
+#define X_CHAIN_POS -1 // -1..0: Not chained. 1: MCU MOSI connected. 2: Next in chain, ... 
                        //#define X_INTERPOLATE  true      // Enable to override 'INTERPOLATE' for the X axis
 #endif
 
@@ -3071,12 +3071,12 @@
 
 #if AXIS_IS_L64XX(X)
 #define X_MICROSTEPS 128    // Number of microsteps (VALID: 1, 2, 4, 8, 16, 32, 128) - L6474 max is 16
-#define X_OVERCURRENT 2000  // (mA) Current where the driver detects an over current          \
-                            //   L6470 & L6474 - VALID: 375 x (1 - 16) - 6A max - rounds down \
+#define X_OVERCURRENT 2000  // (mA) Current where the driver detects an over current          
+                            //   L6470 & L6474 - VALID: 375 x (1 - 16) - 6A max - rounds down 
                             //   POWERSTEP01: VALID: 1000 x (1 - 32) - 32A max - rounds down
-#define X_STALLCURRENT 1500 // (mA) Current where the driver detects a stall (VALID: 31.25 * (1-128) -  4A max - rounds down) \
-                            //   L6470 & L6474 - VALID: 31.25 * (1-128) -  4A max - rounds down                               \
-                            //   POWERSTEP01: VALID: 200 x (1 - 32) - 6.4A max - rounds down                                  \
+#define X_STALLCURRENT 1500 // (mA) Current where the driver detects a stall (VALID: 31.25 * (1-128) -  4A max - rounds down) 
+                            //   L6470 & L6474 - VALID: 31.25 * (1-128) -  4A max - rounds down                               
+                            //   POWERSTEP01: VALID: 200 x (1 - 32) - 6.4A max - rounds down                                  
                             //   L6474 - STALLCURRENT setting is used to set the nominal (TVAL) current
 #define X_MAX_VOLTAGE 127   // 0-255, Maximum effective voltage seen by stepper - not used by L6474
 #define X_CHAIN_POS -1      // Position in SPI chain, 0=Not in chain, 1=Nearest MOSI
@@ -3382,13 +3382,13 @@
 
 //#define AIR_EVACUATION                     // Cutter Vacuum / Laser Blower motor control with G-codes M10-M11
 #if ENABLED(AIR_EVACUATION)
-#define AIR_EVACUATION_ACTIVE LOW // Set to "HIGH" if the on/off function is active HIGH \
+#define AIR_EVACUATION_ACTIVE LOW // Set to "HIGH" if the on/off function is active HIGH 
                                   //#define AIR_EVACUATION_PIN        42     // Override the default Cutter Vacuum or Laser Blower pin
 #endif
 
 //#define AIR_ASSIST                         // Air Assist control with G-codes M8-M9
 #if ENABLED(AIR_ASSIST)
-#define AIR_ASSIST_ACTIVE LOW // Active state on air assist pin \
+#define AIR_ASSIST_ACTIVE LOW // Active state on air assist pin 
                               //#define AIR_ASSIST_PIN            44     // Override the default Air Assist pin
 #endif
 
@@ -3880,10 +3880,10 @@
  * Host Prompt Support enables Marlin to use the host for user prompts so
  * filament runout and other processes can be managed from the host side.
  */
-//#define HOST_ACTION_COMMANDS
+#define HOST_ACTION_COMMANDS
 #if ENABLED(HOST_ACTION_COMMANDS)
-//#define HOST_PAUSE_M76
-//#define HOST_PROMPT_SUPPORT
+#define HOST_PAUSE_M76
+#define HOST_PROMPT_SUPPORT
 //#define HOST_START_MENU_ITEM  // Add a menu item that tells the host to start
 #endif
 
@@ -3913,23 +3913,23 @@
 //#define I2C_POSITION_ENCODERS
 #if ENABLED(I2C_POSITION_ENCODERS)
 
-#define I2CPE_ENCODER_CNT 1 // The number of encoders installed; max of 5 \
+#define I2CPE_ENCODER_CNT 1 // The number of encoders installed; max of 5 
                             // encoders supported currently.
 
 #define I2CPE_ENC_1_ADDR I2CPE_PRESET_ADDR_X   // I2C address of the encoder. 30-200.
 #define I2CPE_ENC_1_AXIS X_AXIS                // Axis the encoder module is installed on.  <X|Y|Z|E>_AXIS.
-#define I2CPE_ENC_1_TYPE I2CPE_ENC_TYPE_LINEAR // Type of encoder:  I2CPE_ENC_TYPE_LINEAR -or- \
+#define I2CPE_ENC_1_TYPE I2CPE_ENC_TYPE_LINEAR // Type of encoder:  I2CPE_ENC_TYPE_LINEAR -or- 
                                                // I2CPE_ENC_TYPE_ROTARY.
-#define I2CPE_ENC_1_TICKS_UNIT 2048            // 1024 for magnetic strips with 2mm poles; 2048 for  \
-                                               // 1mm poles. For linear encoders this is ticks / mm, \
+#define I2CPE_ENC_1_TICKS_UNIT 2048            // 1024 for magnetic strips with 2mm poles; 2048 for  
+                                               // 1mm poles. For linear encoders this is ticks / mm, 
                                                // for rotary encoders this is ticks / revolution.
 //#define I2CPE_ENC_1_TICKS_REV     (16 * 200)            // Only needed for rotary encoders; number of stepper
 // steps per full revolution (motor steps/rev * microstepping)
 //#define I2CPE_ENC_1_INVERT                              // Invert the direction of axis travel.
 #define I2CPE_ENC_1_EC_METHOD I2CPE_ECM_MICROSTEP // Type of error error correction.
-#define I2CPE_ENC_1_EC_THRESH 0.10                // Threshold size for error (in mm) above which the     \
-                                                  // printer will attempt to correct the error; errors    \
-                                                  // smaller than this are ignored to minimize effects of \
+#define I2CPE_ENC_1_EC_THRESH 0.10                // Threshold size for error (in mm) above which the     
+                                                  // printer will attempt to correct the error; errors    
+                                                  // smaller than this are ignored to minimize effects of 
                                                   // measurement noise / latency (filter).
 
 #define I2CPE_ENC_2_ADDR I2CPE_PRESET_ADDR_Y // Same as above, but for encoder 2.
@@ -3961,8 +3961,8 @@
 // axis after which the printer will abort. Comment out to
 // disable abort behavior.
 
-#define I2CPE_TIME_TRUSTED 10000 // After an encoder fault, there must be no further fault \
-                                 // for this amount of time (in ms) before the encoder     \
+#define I2CPE_TIME_TRUSTED 10000 // After an encoder fault, there must be no further fault 
+                                 // for this amount of time (in ms) before the encoder     
                                  // is trusted again.
 
 /**
@@ -4051,7 +4051,7 @@
 //#define MAX7219_GCODE          // Add the M7219 G-code to control the LED matrix
 #define MAX7219_INIT_TEST 2    // Test pattern at startup: 0=none, 1=sweep, 2=spiral
 #define MAX7219_NUMBER_UNITS 1 // Number of Max7219 units in chain.
-#define MAX7219_ROTATE 0       // Rotate the display clockwise (in multiples of +/- 90°) \
+#define MAX7219_ROTATE 0       // Rotate the display clockwise (in multiples of +/- 90°) 
                                // connector at:  right=0   bottom=-90  top=90  left=180
 //#define MAX7219_REVERSE_ORDER  // The individual LED matrix units may be in reversed order
 //#define MAX7219_SIDE_BY_SIDE   // Big chip+matrix boards can be chained side-by-side
@@ -4064,8 +4064,8 @@
 #define MAX7219_DEBUG_PLANNER_HEAD 3 // Show the planner queue head position on this and the next LED matrix row
 #define MAX7219_DEBUG_PLANNER_TAIL 5 // Show the planner queue tail position on this and the next LED matrix row
 
-#define MAX7219_DEBUG_PLANNER_QUEUE 0 // Show the current planner queue depth on this and the next LED matrix row \
-                                      // If you experience stuttering, reboots, etc. this option can reveal how   \
+#define MAX7219_DEBUG_PLANNER_QUEUE 0 // Show the current planner queue depth on this and the next LED matrix row 
+                                      // If you experience stuttering, reboots, etc. this option can reveal how   
                                       // tweaks made to the configuration are affecting the printer in real-time.
 #endif
 
